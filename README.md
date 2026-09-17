@@ -102,51 +102,41 @@ int main()
 Thus, the C program was successfully executed using nested if to check whether the given number is even and greater than 50.
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
 # Ex.No:3
-  Build a C program to demonstrate the use of different data types such as int, float, double, and char, and display their values using printf().
-# Date : 22/04/2026
+  Write a C program to swap (For ex: a=200,b=300 into a=300,b=200) two values without using a third variable.
 # Aim:
-  To build a C program that declares variables of various data types—integer, float, double, and character—initializes them, and prints their values on the screen.
+  To write a C program to swap two values without using a third variable..
 # Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Inside main(), declare and initialize variables of types int, float, double, and char.
-### Step 4: 
-   Display their values using printf().
-### Step 5:    
-   Stop
+1. Start the program.
+2. Declare two integer variables a and b.
+3. Read the values of a and b.
+4. Swap the values using arithmetic operations:
+5. a = a + b
+6. b = a - b
+7. a = a - b
+8. Display the values of a and b after swapping.
+9. Stop the program.
+
 # Program:
 ```
-#include<stdio.h>
-
+#include <stdio.h>
 int main()
 {
-    int a = 10;
-    float b = 5.5f;
-    double c = 25.6789;
-    char d = 'A';
-
-    printf("Integer value = %d\n", a);
-    printf("Float value = %.2f\n", b);
-    printf("Double value = %.4lf\n", c);
-    printf("Character value = %c\n", d);
-
+    int a,b;
+    scanf("%d %d",&a,&b);
+    printf("Numbers before swapping: %d %d\n",a,b);
+    a=a+b;
+    b=a-b;
+    a=a-b;
+    printf("Numbers after swapping: %d %d",a,b);
     return 0;
 }
 ```
 # Output:
-```
-Integer value = 10
-Float value = 5.50
-Double value = 25.6789
-Character value = A
-```
+<img width="942" height="337" alt="image" src="https://github.com/user-attachments/assets/bb819d8f-3038-42cd-a7ae-c596fa81492a" />
+
 # Result: 
+Thus, the C program was successfully executed to swap two values without using a third variable.
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
 # IAPR-1- Module 1 - FoC
