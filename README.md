@@ -1,57 +1,57 @@
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd-M1
-# IAPR-1- Module 1 - FoC
-## 1. Implementation of basic C programs using Literals,Consonants, Variables, Data types.
-## 2. Implementation of different categories of operators.
+# Module 1 
 # Ex.No:1
-  Build a C program to demonstrate the usage of different types of literals: integer, float, character, and string.  
-# Date : 22/04/2026
+Write a C program to read the student percentage and print the grade he/she got?
+marks>=70 print A+ GRADE
+60>= marks <70 print A GRADE
+50>= marks <60 print B GRADE
+40>= marks <50 print C GRADE
+marks<40 print F GRADE
+
 # Aim:
-To build a C program that prints integer, float,character, and string literals on the console using the printf() function.
+To write a C program to read a student's percentage and print the corresponding grade using conditional statements.
+
 # Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Inside the main() function, use printf() to display each literal along with its size in bytes using sizeof() :
-  
-   3.1 Integer literal (e.g., 10) using `%d`
-   
-   3.2 Float literal (e.g., 3.14) using `%f`
-   
-   3.3 Character literal (e.g., 'A') using `%c`
-   
-   3.4 String literal (e.g., "Hello C") using `%s`
-   
-### Step 4: 
-   Stop
+Start the program.
+Declare a variable marks to store the student's percentage.
+Read the student's percentage from the user.
+Check the percentage:
+If marks >= 70, print A+ GRADE.
+Else if marks >= 60, print A GRADE.
+Else if marks >= 50, print B GRADE.
+Else if marks >= 40, print C GRADE.
+Else, print F GRADE.
+Stop the program.
+
 # Program:
 ```
 #include <stdio.h>
-
-int main()
+int main()  
 {
-    int a = 10;
-    float b = 25.5;
-    char ch = 'A';
-    char str[] = "Saveetha";
-
-    printf("Integer Literal : %d\n", a);
-    printf("Float Literal : %.2f\n", b);
-    printf("Character Literal : %c\n", ch);
-    printf("String Literal : %s\n", str);
-
+    int a;
+    scanf("%d",&a);
+    if (a>=70)
+        printf("A+ GRADE");
+    else if (a>=60)
+        printf("A GRADE");
+    else if (a>=50)
+        printf("B GRADE");
+    else if (a>=40)
+        printf("C GRADE");
+    else 
+        printf("F GRADE");
     return 0;
 }
 ```
 
 # Output:
+<img width="947" height="462" alt="image" src="https://github.com/user-attachments/assets/c9dd24bb-cd4d-4249-b067-9930c3b07e00" />
 
-<img width="271" height="135" alt="Screenshot 2026-05-25 113215" src="https://github.com/user-attachments/assets/5ed0d0a3-810e-4f1b-adf8-b7fe518d35e2" />
 
 
 # Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+Thus, the C program was successfully executed to read the student's percentage and print the corresponding grade based on the given percentage.
+
 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
