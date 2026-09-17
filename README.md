@@ -1,27 +1,27 @@
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd-M1
 # Module 1 
 # Ex.No:1
-Write a C program to read the student percentage and print the grade he/she got?
-marks>=70 print A+ GRADE
-60>= marks <70 print A GRADE
-50>= marks <60 print B GRADE
-40>= marks <50 print C GRADE
-marks<40 print F GRADE
+1. Write a C program to read the student percentage and print the grade he/she got?
+   marks>=70 print A+ GRADE
+   60>= marks <70 print A GRADE
+   50>= marks <60 print B GRADE
+   40>= marks <50 print C GRADE
+   marks<40 print F GRADE
 
 # Aim:
 To write a C program to read a student's percentage and print the corresponding grade using conditional statements.
 
 # Algorithm:
-Start the program.
-Declare a variable marks to store the student's percentage.
-Read the student's percentage from the user.
-Check the percentage:
-If marks >= 70, print A+ GRADE.
-Else if marks >= 60, print A GRADE.
-Else if marks >= 50, print B GRADE.
-Else if marks >= 40, print C GRADE.
-Else, print F GRADE.
-Stop the program.
+1. Start the program.
+2. Declare a variable marks to store the student's percentage.
+3. Read the student's percentage from the user.
+4. Check the percentage:
+5. If marks >= 70, print A+ GRADE.
+6. Else if marks >= 60, print A GRADE.
+7. Else if marks >= 50, print B GRADE.
+8. Else if marks >= 40, print C GRADE.
+9. Else, print F GRADE.
+10. Stop the program.
 
 # Program:
 ```
