@@ -2,11 +2,11 @@
 # Module 1 
 # Ex.No:1
 1. Write a C program to read the student percentage and print the grade he/she got?
-   marks>=70 print A+ GRADE
-   60>= marks <70 print A GRADE
-   50>= marks <60 print B GRADE
-   40>= marks <50 print C GRADE
-   marks<40 print F GRADE
+2. marks>=70 print A+ GRADE
+3. 60>= marks <70 print A GRADE
+4. 50>= marks <60 print B GRADE
+5. 40>= marks <50 print C GRADE
+6. marks<40 print F GRADE
 
 # Aim:
 To write a C program to read a student's percentage and print the corresponding grade using conditional statements.
