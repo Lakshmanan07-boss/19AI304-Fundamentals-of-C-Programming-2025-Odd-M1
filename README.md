@@ -138,169 +138,71 @@ int main()
 # Result: 
 Thus, the C program was successfully executed to swap two values without using a third variable.
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
 # Ex.No:4
-  Build a C program to perform arithmetic and bitwise operations on two integers entered by the user. The program should display: Arithmetic operations: addition, subtraction, multiplication, division, and remainder. Bitwise operations: AND, OR, XOR, left shift, right shift, and NOT.
-# Date : 22/04/2026
+  Write a C Program to check a number is positive or negative using switch case.
 # Aim:
-  To build a C program that takes two integers as input and demonstrates the arithmetic and bitwise operations, displaying the results of each operation.
+  Write a C Program to check a number is positive or negative using switch case.
 # Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Declare two integer variables a and b.
-### Step 4: 
-   Prompt the user to enter two integers and read the input using scanf().
-### Step 5:    
-   Perform arithmetic operations on a and b:
-   #### Sum (a + b)
-   #### Difference (a - b)
-   #### Product (a * b)
-   #### Quotient (a / b)
-   #### Remainder (a % b)
-### Step 6: 
-  Perform bitwise operations on a and b:
-  #### AND (a &amp; b)
-  #### OR (a | b)
-  #### XOR (a ^ b)
-  #### Left shift (a << b)
-  #### Right shift (a >> b)
-  #### Bitwise NOT of a (~a) and b (~b)
-### Step 7:   
-  Display the results of all operations using printf().
-### Step 8:   
-  Stop
+1. Start the program.
+2. Declare an integer variable num.
+3. Read the number from the user.
+4. Use switch with the result of (num > 0) - (num < 0).
+5. If the result is 1, print Positive Number.
+6. If the result is -1, print Negative Number.
+7. If the result is 0, print Zero.
+8. Stop the program.
+
 # Program:
 ```
-#include<stdio.h>
-
+#include <stdio.h>
 int main()
 {
-    int a, b;
-
-    printf("Enter two integers: ");
-    scanf("%d %d", &a, &b);
-
-    // Arithmetic operations
-    printf("\nArithmetic Operations\n");
-    printf("Addition = %d\n", a + b);
-    printf("Subtraction = %d\n", a - b);
-    printf("Multiplication = %d\n", a * b);
-    printf("Division = %d\n", a / b);
-    printf("Remainder = %d\n", a % b);
-
-    // Bitwise operations
-    printf("\nBitwise Operations\n");
-    printf("AND = %d\n", a & b);
-    printf("OR = %d\n", a | b);
-    printf("XOR = %d\n", a ^ b);
-    printf("Left Shift = %d\n", a << b);
-    printf("Right Shift = %d\n", a >> b);
-    printf("Bitwise NOT of a = %d\n", ~a);
-    printf("Bitwise NOT of b = %d\n", ~b);
-
+    int a;
+    scanf("%d",&a);
+    if (a>0)
+        printf("%d is positive.",a);
+    else if (a<0)
+        printf("%d is negative.",a);
+    else
+        printf("%d is neither positive nor negative.",a);
     return 0;
 }
 ```
 # Output:
-```
-Enter two integers: 10 5
+<img width="932" height="218" alt="image" src="https://github.com/user-attachments/assets/2e81b67b-456b-4069-b0d5-6ea4752a1a47" />
 
-Arithmetic Operations
-Addition = 15
-Subtraction = 5
-Multiplication = 50
-Division = 2
-Remainder = 0
 
-Bitwise Operations
-AND = 0
-OR = 15
-XOR = 15
-Left Shift = 320
-Right Shift = 0
-Bitwise NOT of a = -11
-Bitwise NOT of b = -6
-```
 # Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+Thus, the C program was successfully executed to check whether the given number is positive, negative, or zero using switch case.
 
 
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
 # Ex.No:5
-  Develop a C program to check whether a given character is a vowel, consonant, digit, or special symbol using the ternary operator.
-# Date : 22/04/2026
+  Write a C program to calculate a bike’s average consumption to cover 10000km with 150.5 liter fuel.
 # Aim:
-  To develop and implement a C program that classifies a character as a vowel, consonant, digit, or special symbol using the ternary operator.
+  To write a C program to calculate a bike's average fuel consumption for covering a distance of 10,000 km using 150.5 liters of fuel.
 # Algorithm:
-### Step 1:
-  Start
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Input a character ch from the user.
-### Step 4: 
-   Check if ch is a digit ('0' to '9').
-   
-   If true → Print "Digit" → Go to Step 8.
-   
-   If false → Go to Step 5.
-   
-### Step 5:    
-   Check if ch is an alphabet letter ('A' - 'Z' or 'a' – 'z').
-   
-   If true → Go to Step 6.
-   
-   If false → Go to Step 7.
-   
-### Step 6: 
-   Check if ch is a vowel (a, e, i, o, u or A, E, I, O, U).
-   
-   If true → Print "Vowel" → Go to Step 8.
-   
-   If false → Print "Consonant" → Go to Step 8.
-   
-### Step 7:   
-   Print "Special Symbol".
-### Step 8:   
-  Stop
+1. Start the program.
+2. Declare variables for distance, fuel, and average.
+3. Assign distance = 10000 km and fuel = 150.5 litres.
+4. Calculate average consumption using average = distance / fuel.
+5. Display the average consumption.
+6. Stop the program.
+
 # Program:
 ```
-#include<stdio.h>
-
+#include <stdio.h>
 int main()
 {
-    char ch;
-
-    printf("Enter a character: ");
-    scanf("%c", &ch);
-
-    (ch >= '0' && ch <= '9') ?
-        printf("Digit") :
-
-        ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z')) ?
-
-            ((ch == 'A' || ch == 'E' || ch == 'I' || ch == 'O' || ch == 'U' ||
-              ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') ?
-
-                printf("Vowel") :
-                printf("Consonant"))
-
-        : printf("Special Symbol");
-
+    float a=10000,b=150.5,c;
+    c=a/b;
+    printf("Average consumption(km/lt):%.2f",c);
     return 0;
+    
 }
 ```
 # Output:
-```
-Enter a character: A
-Vowel
-```
-# Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+<img width="906" height="143" alt="image" src="https://github.com/user-attachments/assets/c088c045-a857-4eaa-9025-9dce4f8f0d0e" />
 
+# Result: 
+Thus, the C program was successfully executed, and the bike's average fuel consumption is 66.45 km/litre.
 
