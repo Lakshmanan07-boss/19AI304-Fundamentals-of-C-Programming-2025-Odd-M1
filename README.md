@@ -53,55 +53,53 @@ int main()
 Thus, the C program was successfully executed to read the student's percentage and print the corresponding grade based on the given percentage.
 
 
-
-# 19AI304-Fundamentals-of-C-Programming-2025-Odd
-# IAPR-1- Module 1 - FoC
 # Ex.No:2
-  Build a C program to display the value of a macro constant and a constant variable.
-# Date : 22/04/2026
+Write a C program to check whether the given number is  even number and greater than 50 or not using nested if.
+
 # Aim:
-  To build a C program that demonstrates the use of macro constants and constant variables.
+ To write a C program using nested if to check whether the given number is an even number and greater than 50.
+ 
 # Algorithm:
-### Step 1:
-  Start  
-### Step 2: 
-  Include the standard input-output library: #include<stdio.h>.
-### Step 3: 
-  Define a macro constant `PI` with value `3.14159` using `#define`.
-### Step 4: 
-   Inside `main()`:
-   
-   4.1 Declare a constant integer variable `DAYS`
-   
-   4.2 Initialize it with the value `7`
-   
-### Step 5:  
-  Use `printf()` to display the values of `PI` and `DAYS`.     
-### Step 6:  
-  Stop
+1. Start the program.
+2. Declare an integer variable num.
+3. Read the number from the user.
+4. Check whether num is greater than 50 using if.
+5. If it is greater than 50, check whether num is even using num % 2 == 0.
+6. If both conditions are true, print "Number is even and greater than 50".
+7. Otherwise, print the appropriate message.
+8. Stop the program.
+
 # Program:
 ```
-#include<stdio.h>
-
-#define PI 3.14159
-
+#include <stdio.h>
 int main()
 {
-    const int DAYS = 7;
-
-    printf("Value of PI = %.5f\n", PI);
-    printf("Value of DAYS = %d\n", DAYS);
-
+    int a;
+    scanf("%d",&a);
+    if (a % 2 == 0)
+    {
+        printf("The number is even\n");
+        if (a >= 50)
+        {
+            printf("The number is greater than  or equal to 50");
+        }
+        else
+        {
+            printf("The number less than 50");
+        }
+    }
+    else
+    {
+        printf("The number is NOT an even number");
+    }
     return 0;
 }
 ```
 # Output:
-```
-Value of PI = 3.14159
-Value of DAYS = 7
-```
+<img width="943" height="332" alt="image" src="https://github.com/user-attachments/assets/c8f26772-bbb3-49a9-b581-c1dfb2524b5c" />
+
 # Result: 
-Thus, the program was implemented and executed successfully, and the required output was obtained.
+Thus, the C program was successfully executed using nested if to check whether the given number is even and greater than 50.
 
 
 # 19AI304-Fundamentals-of-C-Programming-2025-Odd
